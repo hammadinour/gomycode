@@ -1,0 +1,154 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMeBp+y/Jj1lonQXSRgsybO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hammadinour/gomycode/blob/main/attemptipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tuple1 =(2,5)\n",
+        "tuple2 =(1,2)\n",
+        "tuple3 =(4,4)\n",
+        "tuple4 =(2,3)\n",
+        "tuple5 =(2,1)\n",
+        "list = [tuple1 ,tuple2 ,tuple3 ,tuple4 ,tuple5 ]\n",
+        "\n",
+        "\n",
+        "def diffsort(tuple) :\n",
+        "  return tuple[1]\n",
+        "list.sort(key=diffsort)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "lur5H3E5mRDZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#(Question 3\n",
+        "\n",
+        "#Write a Python program that combines two dictionaries by adding values for common keys.\n",
+        "\n",
+        "#Expected result: {'a': 400, 'b': 400, 'd': 400, 'c': 300}\n",
+        "d1 = {'a': 100, 'b': 200, 'c':300}\n",
+        "\n",
+        "d2 = {'a': 300, 'b': 200, 'd':400}\n",
+        "\n",
+        "d3 = {d1,d2}\n",
+        "\n",
+        "print (d3)\n"
+      ],
+      "metadata": {
+        "id": "YruAqSZpppKb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "d1 = {'a': 100, 'b': 200, 'c':300}\n",
+        "\n",
+        "d2 = {'a': 300, 'b': 200, 'd':400}\n",
+        "d1.update(d2)\n",
+        "for key in d1 and d2 :\n",
+        "  d1.value=d1.value + d2.value\n",
+        "\n",
+        "d3 = {**d1,**d2}\n",
+        "print (d1)"
+      ],
+      "metadata": {
+        "id": "tQ9pXx2iumfh",
+        "outputId": "d3ad23ab-81d6-484a-c48b-0335086942c1",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 117,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'a': 300, 'b': 200, 'c': 300, 'd': 400}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "d1 = {'a':100,'b':200,'c':300}\n",
+        "d2 = {'a':300,'b':200,'d':400}\n",
+        "def comparekeys (d1,d2) :\n",
+        "  sort(key)\n",
+        "  if d1.key()==d2.key() :\n",
+        "      print (d1.key())\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "LAX_oOTiwWvZ"
+      },
+      "execution_count": 144,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "d1 = {'a':100,'b':200,'c':300}\n",
+        "d2 = {'a':300,'b':200,'d':400}\n",
+        "if d1.value()!=d2.value() :\n",
+        "  d1[d2.value()]:d2.key()\n",
+        "  print (d1)"
+      ],
+      "metadata": {
+        "id": "ro_utgdL2f4U",
+        "outputId": "af62e458-3eb5-49a4-dc94-5ada590447bb",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 235
+        }
+      },
+      "execution_count": 146,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "AttributeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-146-eb6e007487c7>\u001b[0m in \u001b[0;36m<cell line: 3>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0md1\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m{\u001b[0m\u001b[0;34m'a'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;36m100\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m'b'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;36m200\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m'c'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;36m300\u001b[0m\u001b[0;34m}\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0md2\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m{\u001b[0m\u001b[0;34m'a'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;36m300\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m'b'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;36m200\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m'd'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;36m400\u001b[0m\u001b[0;34m}\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0;32mif\u001b[0m \u001b[0md1\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mvalue\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m!=\u001b[0m\u001b[0md2\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mvalue\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m   \u001b[0md1\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0md2\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mvalue\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0md2\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mkey\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m   \u001b[0mprint\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0md1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mAttributeError\u001b[0m: 'dict' object has no attribute 'value'"
+          ]
+        }
+      ]
+    }
+  ]
+}
